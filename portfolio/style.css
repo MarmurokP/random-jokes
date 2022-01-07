@@ -100,16 +100,16 @@ margin-right: 20px;
 }
 
 .header-two{
-    margin-left: 25%;
-    display: flex;
-    justify-content: center;
+    margin-left: 370px;
+    text-align: center;
    position: relative;
-    width: 50%;
+    width: 700px;
     overflow-x: hidden;
+    margin-bottom: 28px;
 }
 
 h2{
-    
+
 font-family: Merriweather;
 font-style: normal;
 font-weight: bold;
@@ -119,24 +119,22 @@ color: #bdae82;
 }
 
 h2::before{
-    content: "";
-    display: block;
+    content: "";    
   position: absolute;
   width: 350px;
-  height: 1px;
+  height: 2px;
   top: 50%;
-  left: -10%;
+ margin-left: calc(-50% - 20px);
   background-color: #bdae82;    
 }
 
 h2::after{
-    content: "";
-    display: block;
+    content: "";    
   position: absolute;
   width: 350px;
-  height: 1px;
+  height: 2px;
   top: 50%;
-  right: -10%;
+  margin-left: 21px;
   background-color: #bdae82;    
 }
 
@@ -164,6 +162,7 @@ background-image: url(./assets/img/bg.jpg);
 background-repeat: no-repeat;
 background-position: center -90px;
 height: 820px;
+margin-bottom: 67px;
 }
 
 .hero-section{   
@@ -199,4 +198,64 @@ color: #ffffff;
 
 p{
     margin: 0;
+}
+
+/*skills*/
+
+.skills-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 240px;
+    text-align: center;
+    margin: 0 20px;
+    padding-bottom: 67px;
+}
+
+.skill-item{
+    width: 320px;
+    background-position: center top;  
+    background-repeat: no-repeat;
+    
+}
+
+.skill-item:nth-child(1){
+    background-image: url(./assets/svg/camera1.svg);
+    background-size: 62px 50px;
+}
+
+.skill-item:nth-child(2){
+    background-image: url(./assets/svg/video.svg);
+    background-size: 62px 50px;
+}
+
+.skill-item:nth-child(3){
+    background-image: url(./assets/svg/image1.svg);
+    background-size: 62px 50px;
+}
+
+.skill-item:nth-child(4){
+    background-image: url(./assets/svg/mic.svg);
+    background-size: 62px 50px;
+}
+
+h3{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 40px;
+    padding-top: 80px;
+}
+
+.skill-about{   
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 36px;   
+    width: 280px; 
+    padding-left: 20px;
 }
