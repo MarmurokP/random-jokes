@@ -259,3 +259,49 @@ h3{
     width: 280px; 
     padding-left: 20px;
 }
+
+/*Portfolio*/
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 895px;
+    height: 55px;
+    margin-left: 272px;
+    text-align: center; 
+    padding-bottom: 60px;  
+}
+
+.empty-button{
+    border: 2px solid #bdae82;    
+    width: 220px;
+    height: 55px;
+    background-color: transparent;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    color: #bdae82;
+    cursor: pointer;
+    transition: .3s;    
+}
+
+.empty-button:hover{   
+    color: #ffffff;
+}
+
+.empty-button:nth-child(4){
+    background-color: #bdae82;
+    color: #000000;
+}
+
+.gallery{
+    padding-bottom: 66px;
+    margin-left: 20px;
+    width: 1400px;
+  height: 1145px;
+  display: flex;
+  flex-flow: wrap;
+  position: relative;
+  column-gap: 25px;
+  row-gap: 25px;
+}
