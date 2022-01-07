@@ -305,3 +305,33 @@ h3{
   column-gap: 25px;
   row-gap: 25px;
 }
+
+
+/*Video*/
+
+.video-player{
+    width: 1400px;
+    height: 705px;
+    margin-left: 20px;
+    background-image: url(./assets/img/video-player.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 66px;
+}
+
+.play-button{
+    background-image: url(./assets/svg/play-video.svg);
+    position: absolute;
+    width: 130px;
+    height: 130px;   
+    background-repeat: no-repeat;
+    transform: .3s; 
+    cursor: pointer;  
+} 
+
+.play-button:hover{
+    filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%);    
+}
