@@ -239,7 +239,7 @@ p{
     background-size: 62px 50px;
 }
 
-h3{
+h4{
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
@@ -334,4 +334,61 @@ h3{
 
 .play-button:hover{
     filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%);    
+}
+
+/*Price*/
+
+.price-cards{
+    margin-left: 20px;
+    width: 1400px;
+  height: 505px;
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  column-gap: 25px; 
+}
+
+.price-card{
+    width: 450px;
+    height: 458px;
+    border:3px solid #bdae82;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h3{
+   margin: 0; 
+    font-family: Merriweather;
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 56px;
+color: #ffffff;
+}
+
+.cost {
+    padding-top: 20px;
+font-family: Merriweather;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 48px;
+color: #bdae82;
+
+}
+
+.description{
+    padding-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Inter;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 36px;
+}
+
+.desc-span{
+    display: block;
 }
