@@ -3,10 +3,23 @@ html{
     background-color: #000000;
 }
 
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+}
+
 .container{
     width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+h4{
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -47,8 +60,9 @@ html{
 }
 
 .nav-link{
-    text-decoration: none;
+    text-decoration: none;    
     padding: 0 15px;
+   
     line-height: 57px;
     font-family: Inter;
     font-style: normal;
@@ -77,6 +91,7 @@ margin-right: 20px;
     font-weight: 700;
     font-size: 20px;
     color: #bdae82;
+    cursor: pointer;
 }
 
 .slash{
@@ -97,6 +112,7 @@ margin-right: 20px;
     font-weight: 700;
     font-size: 20px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .header-two{
@@ -246,7 +262,7 @@ h4{
     font-size: 20px;
     color: #ffffff;
     line-height: 40px;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .skill-about{   
@@ -258,6 +274,7 @@ h4{
     line-height: 36px;   
     width: 280px; 
     padding-left: 20px;
+    padding-top: 20px;
 }
 
 /*Portfolio*/
@@ -473,3 +490,121 @@ line-height: 36px;
     margin-bottom: 27px;  
 }
 
+/*Footer*/
+
+.footer-container{
+   
+   padding-left: 20px;
+   padding-right: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links{
+    display: flex;
+    font-family: Inter;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 50px;
+color: #ffffff;
+}
+
+.copyright{
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.github-link{ 
+    padding-right: 1px;   
+    text-decoration: none;
+    font-family: Inter;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 50px;
+color: #ffffff;
+transition: .3s;
+}
+
+.github-link:hover{
+    color: #bdae82;
+}
+
+.rs-link{
+    padding-right: 12px;
+    text-decoration: none;
+    font-family: Inter;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 50px;
+color: #ffffff;
+transition: .3s;
+}
+
+.rs-link:hover{
+    color: #bdae82;
+}
+
+
+.footer-nav-list {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 208px;
+}
+
+.footer-nav-item{
+width: 188px;
+background-position: center top;
+background-repeat: no-repeat;
+
+}
+
+.social-link{
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    display: block;   
+}
+
+.footer-nav-item:nth-child(1){
+    background-image: url(./assets/svg/insta.svg);
+    background-size: 32px 32px;  
+    transition: .3s;
+}
+.footer-nav-item:nth-child(2){
+    background-image: url(./assets/svg/fb.svg);
+    background-size: 32px 32px;
+    transition: .3s; 
+}
+.footer-nav-item:nth-child(3){
+    background-image: url(./assets/svg/tw.svg);
+    background-size: 32px 32px;
+    transition: .3s; 
+}
+.footer-nav-item:nth-child(4){
+    background-image: url(./assets/svg/pinterest.svg);
+    background-size: 32px 32px;
+    transition: .3s; 
+}
+.footer-nav-item:nth-child(1):hover{    
+        filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%);       
+}
+.footer-nav-item:nth-child(2):hover{
+    filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%);
+}
+.footer-nav-item:nth-child(3):hover{
+    filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%); 
+}
+.footer-nav-item:nth-child(4):hover{
+    filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%);
+}
