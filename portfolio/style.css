@@ -346,6 +346,7 @@ h4{
   flex-flow: row;
   position: relative;
   column-gap: 25px; 
+  margin-bottom: 99px;
 }
 
 .price-card{
@@ -392,3 +393,83 @@ line-height: 36px;
 .desc-span{
     display: block;
 }
+
+/*Contacts*/
+
+.container .contacts{
+    display: flex;
+    height: 700px;
+    background-image: url(./assets/img/contacts.jpg);
+    background-size: auto 700px;
+    background-position: center center;
+    justify-content: flex-end;
+}
+
+.contacts-board{
+    padding-top: 26px;
+    width:450px;
+    height: 445px;   
+    text-align: left;
+    margin-right: 20px;
+}
+
+.h2-contact{
+    margin-bottom: 40px;
+}
+
+.h2-contact::before{
+    display: none;
+}
+
+.h2-contact::after{
+    display: none;
+}
+
+::placeholder {
+  outline: none;    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #bdae82;    
+  }
+
+  :focus::placeholder{
+      opacity: 0.5;      
+  } 
+
+.email{
+    padding-left: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: transparent;
+    width: 425px;
+    height: 43px;
+    border: 3px solid #bdae82;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.message{    
+    width: 425px;
+    height: 89px;
+    padding-left: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: transparent;   
+    border: 3px solid #bdae82;
+    margin-bottom: 20px;
+    outline: none;
+    resize: none;  
+    margin-bottom: 27px;  
+}
+
