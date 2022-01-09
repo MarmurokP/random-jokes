@@ -1,6 +1,15 @@
+:root {
+    --color-gold: #bdae82;
+    --color-black: #000;
+    --color-white: #ffffff;
+    --font1: 60px;
+    --font2: 40px;
+    --font3: 20px;
+  }
+
 html{
     scroll-behavior: smooth;
-    background-color: #000000;
+    background-color: var(--color-black);
 }
 
 li{
@@ -40,7 +49,7 @@ h4{
     background-image: url(./assets/svg/logo.svg); 
     background-size: contain;
     background-repeat: no-repeat;
-    transform: .3s; 
+    transition: .3s; 
     cursor: pointer;   
 }
 
@@ -67,13 +76,13 @@ h4{
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: var(--font3);
+    color: var(--color-white);
     transition: .3s;
 }
 
 .nav-link:hover{
-    color: #bdae82;
+    color: var(--color-gold);
 }
 
 .languages{
@@ -89,8 +98,8 @@ margin-right: 20px;
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    color: #bdae82;
+    font-size: var(--font3);
+    color: var(--color-gold);
     cursor: pointer;
 }
 
@@ -100,8 +109,8 @@ margin-right: 20px;
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: var(--font3);
+    color: var(--color-white);
 }
 
 .rus{
@@ -110,8 +119,8 @@ margin-right: 20px;
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: var(--font3);
+    color: var(--color-white);
     cursor: pointer;
 }
 
@@ -129,9 +138,9 @@ h2{
 font-family: Merriweather;
 font-style: normal;
 font-weight: bold;
-font-size: 40px;
+font-size: var(--font2);
 line-height: 80px;
-color: #bdae82;
+color: var(--color-gold);
 }
 
 h2::before{
@@ -141,7 +150,7 @@ h2::before{
   height: 2px;
   top: 50%;
  margin-left: calc(-50% - 20px);
-  background-color: #bdae82;    
+  background-color: var(--color-gold);    
 }
 
 h2::after{
@@ -151,23 +160,23 @@ h2::after{
   height: 2px;
   top: 50%;
   margin-left: 21px;
-  background-color: #bdae82;    
+  background-color: var(--color-gold);    
 }
 
 .fill-button{
     border: 0;
     width: 220px;
     height: 55px;
-    background-color: #bdae82;
+    background-color: var(--color-gold);
     font-family: Inter;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--font3);
     cursor: pointer;
     transition: .3s;
 }
 
 .fill-button:hover{
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 /*hero landing*/
@@ -195,9 +204,9 @@ margin-bottom: 0;
 font-family: Merriweather;
 font-style: 700;
 font-weight: bold;
-font-size: 60px;
+font-size: var(--font1);
 line-height: 120px;
-color: #ffffff;
+color: var(--color-white);
 }
 
 .about-hero{    
@@ -206,8 +215,8 @@ color: #ffffff;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: var(--font3);
+    color: var(--color-white);
     line-height: 40px;
     width: 470px;
 }
@@ -259,8 +268,8 @@ h4{
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: var(--font3);
+    color: var(--color-white);
     line-height: 40px;
     padding-top: 100px;
 }
@@ -270,7 +279,7 @@ h4{
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    color: #ffffff;
+    color: var(--color-white);
     line-height: 36px;   
     width: 280px; 
     padding-left: 20px;
@@ -290,25 +299,25 @@ h4{
 }
 
 .empty-button{
-    border: 2px solid #bdae82;    
+    border: 2px solid var(--color-gold);    
     width: 220px;
     height: 55px;
     background-color: transparent;
     font-family: Inter;
     font-weight: 400;
-    font-size: 20px;
-    color: #bdae82;
+    font-size: var(--font3);
+    color: var(--color-gold);
     cursor: pointer;
     transition: .3s;    
 }
 
 .empty-button:hover{   
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .empty-button:nth-child(4){
-    background-color: #bdae82;
-    color: #000000;
+    background-color: var(--color-gold);
+    color: var(--color-black);
 }
 
 .gallery{
@@ -369,7 +378,7 @@ h4{
 .price-card{
     width: 450px;
     height: 458px;
-    border:3px solid #bdae82;
+    border:3px solid var(--color-gold);
     text-align: center;
     padding-top: 40px;
 }
@@ -381,7 +390,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 28px;
 line-height: 56px;
-color: #ffffff;
+color: var(--color-white);
 }
 
 .cost {
@@ -391,7 +400,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 48px;
-color: #bdae82;
+color: var(--color-gold);
 
 }
 
@@ -399,7 +408,7 @@ color: #bdae82;
     padding-top: 20px;
     margin-bottom: 40px;
     text-align: center;
-    color: #ffffff;
+    color: var(--color-white);
     font-family: Inter;
 font-style: normal;
 font-weight: 400;
@@ -447,9 +456,9 @@ line-height: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--font3);
     line-height: 40px;
-    color: #bdae82;    
+    color: var(--color-gold);    
   }
 
   :focus::placeholder{
@@ -461,13 +470,13 @@ line-height: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--font3);
     line-height: 40px;
     color: #ffffff;
     background-color: transparent;
     width: 425px;
     height: 43px;
-    border: 3px solid #bdae82;
+    border: 3px solid var(--color-gold);
     margin-bottom: 20px;
     outline: none;
 }
@@ -479,11 +488,11 @@ line-height: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--font3);
     line-height: 40px;
-    color: #ffffff;
+    color: var(--color-white);
     background-color: transparent;   
-    border: 3px solid #bdae82;
+    border: 3px solid var(--color-gold);
     margin-bottom: 20px;
     outline: none;
     resize: none;  
@@ -507,9 +516,9 @@ line-height: 36px;
     font-family: Inter;
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: var(--font3);
 line-height: 50px;
-color: #ffffff;
+color: var(--color-white);
 }
 
 .copyright{
@@ -525,35 +534,35 @@ color: #ffffff;
     font-family: Inter;
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: var(--font3);
 line-height: 50px;
-color: #ffffff;
+color: var(--color-white);
 transition: .3s;
 }
 
 .github-link:hover{
-    color: #bdae82;
+    color: var(--color-gold);
 }
 
 .rs-link{
-    padding-right: 12px;
+    padding-left: 47px;
     text-decoration: none;
     font-family: Inter;
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: var(--font3);
 line-height: 50px;
-color: #ffffff;
+color: var(--color-white);
 transition: .3s;
 }
 
 .rs-link:hover{
-    color: #bdae82;
+    color: var(--color-gold);
 }
 
 
 .footer-nav-list {
-    
+    padding-left: 20px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -570,6 +579,7 @@ background-repeat: no-repeat;
 }
 
 .social-link{
+    
     text-decoration: none;
     width: 32px;
     height: 32px;
