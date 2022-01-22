@@ -20,6 +20,10 @@ html{
     background-color: var(--color-black);
 }
 
+body{
+    margin: 0;
+}
+
 li{
     list-style: none;
 }
@@ -46,7 +50,7 @@ h4{
     background-repeat: no-repeat;
     background-position: center 0;
     display: flex; 
-    height: 90px;      
+    min-height: 90px;      
 }
 
 .header-logo{
@@ -179,7 +183,8 @@ h2::after{
     background-color: var(--color-gold);
     font-family: Inter;
     font-weight: 400;
-    font-size: var(--font3);
+    font-size: 20px;
+    line-height: 40px;
     cursor: pointer;
     transition: .3s;
 }
@@ -240,7 +245,7 @@ p{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 240px;
+    min-height: 240px;
     text-align: center;
     margin: 0 20px;
     padding-bottom: 67px;
@@ -277,7 +282,7 @@ h4{
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
-    font-size: var(--font3);
+    font-size: 20px;
     color: var(--color-white);
     line-height: 40px;
     padding-top: 100px;
@@ -299,6 +304,7 @@ h4{
 
 .buttons{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 895px;
     height: 55px;
@@ -314,7 +320,7 @@ h4{
     background-color: transparent;
     font-family: Inter;
     font-weight: 400;
-    font-size: var(--font3);
+    font-size: 20px;
     color: var(--color-gold);
     cursor: pointer;
     transition: .3s;    
@@ -640,46 +646,47 @@ background-repeat: no-repeat;
         max-width: 768px;
         margin: 0 auto;
         padding: 0 20px;
+        overflow: hidden;
     }
-    h1{        
+    h1{  
+        padding-top: 51px;      
         line-height: 64px;
         font-style: 400;
         font-weight: 400;        
     }
     h2{
         line-height: 40px;
-    }
-    
-    .header-container{   
-        position: relative;     
-       overflow-x: hidden;
+    }    
+        
+    .header-container{                 
         background-size: auto 620px;
-        background-position: -13px -30px;
-         
+        background-position: -5px -30px;               
     }
-    .header-nav{        
-        background-color: var(--color-black);
-        position: absolute;
+    .header-logo{
+        margin-left: 40px;
+    }
+    .header-nav{                        
+        background-color: var(--color-black);     
         max-width: 620px;
         height: 1024px;
-        z-index: 100;
-        transition: .3s;
+        z-index: 25;
+        transition: .3s all linear;
     }
-    .open{
-        /* display: block; */
+    .open{ 
+        position: absolute;
+        display: block;       
         right: 0;
     }
     .close{
+        position: fixed;
         right: -630px;
+             
     }
-
     .header-nav-list{        
         display: block;
         flex-direction: column; 
        padding: 134px 344px 427px 127px;
        margin: 0;
-      
-
     }
     .header-nav-item{
         margin-bottom: 12px;
@@ -691,7 +698,10 @@ background-repeat: no-repeat;
          
     }
     .languages{
-       margin-left: 450px;
+        position: relative;
+       margin-left: 441px;
+       align-items: flex-start;
+       top: 20px;
     }
     .burger { 
         top: 20px;       
@@ -726,13 +736,68 @@ background-repeat: no-repeat;
 
 
     .hero-container{         
-        height: 590px;
-        background-position: -13px -120px;
+        min-height: 500px;
+        background-position: -5px -120px;
         background-size: auto 620px;       
+    }
+    .hero-section{
+        padding-left: 40px;
     }
     
     .about-hero{
+        padding: 20px 0;
+        margin-bottom: 39px;
         line-height: 24px;
-        max-width: 390px
+        max-width: 390px;
+        font-size:20px;
+    }  
+    /*Skills*/
+
+    .header-two{
+        margin-left: 180px;
+        margin-top: 72px;
+        max-width: 367px; 
+        margin-bottom: 40px;       
+    }
+    h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    h2::before{
+        margin-left: calc(-50% + 23px);
+        width: 140px;
+    }
+    h2::after{
+        margin-left: 22px;
+        width: 140px;
+    }
+    h4{
+        padding-top: 80px;
+    }
+    .skills-items{
+        margin: 0 52px 14px;
+    }
+    .skill-item{       
+       max-width: 304px;
+    }
+    .skill-item:nth-child(1){
+       margin-bottom: 75px;
+    }
+    .skill-about{
+        line-height: 22px;
+        padding-left: 0;
+    }
+
+    /*Portfolio*/
+
+    .buttons{
+        justify-content: unset;
+        gap: 5px;
+        margin-left: 142px;
+        padding: 5px 0 120px;
+    }
+    .gallery{
+        justify-content: center;
+        padding: 0 0 40px 0;
     }
 }        
