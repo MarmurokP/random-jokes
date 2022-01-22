@@ -798,6 +798,39 @@ background-repeat: no-repeat;
     }
     .gallery{
         justify-content: center;
-        padding: 0 0 40px 0;
+        padding: 0;
+    }
+
+    /*Video*/
+
+    .video-player{ 
+        overflow: hidden;      
+        margin-left: calc(50% - 50vw);
+        width: 100vw;
+        height: 423px;
+        background-size: auto 98%;
+        background-position: -5px 7px;
+        padding-bottom: 0;       
+    }
+    .play-button{
+        margin: 8px 4px 0 0;
+        width: 65px;
+        height: 65px;
+        background-size: cover;
+    }
+
+    /*Prices*/
+
+    .price-cards{
+        padding-top: 5px;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    .price-card{
+        width: 414px;
+        height: 460px;
+        padding-top: 39px;
     }
 }        
