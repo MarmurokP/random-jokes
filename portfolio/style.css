@@ -471,7 +471,7 @@ line-height: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: var(--font3);
+    font-size: 20px;
     line-height: 40px;
     color: var(--color-gold);    
   }
@@ -485,7 +485,7 @@ line-height: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: var(--font3);
+    font-size: 20px;
     line-height: 40px;
     color: #ffffff;
     background-color: transparent;
@@ -503,7 +503,7 @@ line-height: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: var(--font3);
+    font-size: 20px;
     line-height: 40px;
     color: var(--color-white);
     background-color: transparent;   
@@ -531,7 +531,7 @@ line-height: 36px;
     font-family: Inter;
 font-style: normal;
 font-weight: 400;
-font-size: var(--font3);
+font-size: 20px;
 line-height: 50px;
 color: var(--color-white);
 }
@@ -549,7 +549,7 @@ color: var(--color-white);
     font-family: Inter;
 font-style: normal;
 font-weight: 400;
-font-size: var(--font3);
+font-size: 20px;
 line-height: 50px;
 color: var(--color-white);
 transition: .3s;
@@ -565,7 +565,7 @@ transition: .3s;
     font-family: Inter;
 font-style: normal;
 font-weight: 400;
-font-size: var(--font3);
+font-size: 20px;
 line-height: 50px;
 color: var(--color-white);
 transition: .3s;
@@ -803,8 +803,7 @@ background-repeat: no-repeat;
 
     /*Video*/
 
-    .video-player{ 
-        overflow: hidden;      
+    .video-player{             
         margin-left: calc(50% - 50vw);
         width: 100vw;
         height: 423px;
@@ -823,7 +822,7 @@ background-repeat: no-repeat;
 
     .price-cards{
         padding-top: 5px;
-        margin: 0;
+        margin: 0 0 80px 0;
         flex-wrap: wrap;
         justify-content: center;
         gap: 50px;
@@ -832,5 +831,61 @@ background-repeat: no-repeat;
         width: 414px;
         height: 460px;
         padding-top: 39px;
+    }
+
+    /*Contact*/
+
+    .container .contacts{
+        margin-left: calc(50% - 50vw);
+        width: 100vw;
+        height: 600px;
+        background-size: auto 100%;
+        background-position: -234px 0px;
+        justify-content: center;
+    }
+    .contacts-board{
+        display: flex;
+        padding-top: 35px;
+        margin: 0;          
+        text-align: center;    
+    }
+    .h2-contact{
+        
+       padding: 10px 0;
+    }
+
+    /*Footer*/
+    .footer-container{
+        flex-direction: column;
+        margin:27px 0;
+        padding:0;        
+        height: 126px;       
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-links{
+        line-height: 24px;
+        height: auto;
+        padding: 0;
+    }
+    .copyright{
+        height: auto;
+    }
+    .github-link{
+        line-height: 24px;
+        height: auto;
+    }
+    .rs-link{
+        line-height: 24px;
+        height: auto;
+        padding: 0 0 10px 0;
+    }
+    .footer-links{
+        height: auto;
+    }
+    .footer-nav-list{
+        padding: 0;
+        margin: 0;
+        height: auto;
     }
 }        
