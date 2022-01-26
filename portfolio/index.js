@@ -24,6 +24,7 @@ navLink.forEach(link => {
 // Portfolio
 
 const emptyButton = document.querySelector('.empty-button');
+const emptyButtons = document.querySelectorAll('.empty-button');
 const portfolioImgs = document.querySelectorAll('.portfolio-img');
 const portfolioBtns = document.querySelector('.portfolio-buttons');
 
@@ -46,4 +47,26 @@ portfolioBtns.addEventListener('click', changeImg);
 
 const seasons = ['winter', 'spring', 'summer', 'autumn'];
 
+function preloadImages() {
+    for(let i = 1; i <= 6; i++) {
+      const img = new Image();
+      seasons.forEach(seas => {
+        img.src = `./assets/img/${seas}/${i}.jpg`;
+      });      
+    };
+  };
+  preloadImages();
 
+  function clearActive(){
+      emptyButtons.forEach(btn => {       
+            btn.classList.remove('empty-button-active');       
+      });      
+  };
+
+  portfolioBtns.addEventListener('click', clearActive);
+  
+  function addActive(event){
+    event.target.classList.add('empty-button-active');
+};
+
+portfolioBtns.addEventListener('click', addActive);
