@@ -21,4 +21,29 @@ navLink.forEach(link => {
 })
 
 
-console.log('Ваша отметка - 82 балла(ов)\nОтзыв по пунктам ТЗ:\nЧастично выполненные пункты:\n1) нет полосы прокрутки при ширине страницы от 768рх до 480рх — 4 балл(а)\nКомментарий проверяющего: Пропадает 4-я кнопка раздела portfolio\n2) нет полосы прокрутки при ширине страницы от 480рх до 320рх — 3 балл(а)\nКомментарий проверяющего: Обрезаются поля Contact Me')
+// Portfolio
+
+const emptyButton = document.querySelector('.empty-button');
+const portfolioImgs = document.querySelectorAll('.portfolio-img');
+const portfolioBtns = document.querySelector('.portfolio-buttons');
+
+
+function changeImg(event) {
+    if(event.target.classList.contains('empty-button')){
+        if(event.target.dataset.season === 'winter'){
+            portfolioImgs.forEach((img, i) => img.src = `./assets/img/winter/${i + 1}.jpg`);
+        }else if(event.target.dataset.season === 'spring'){
+            portfolioImgs.forEach((img, i) => img.src = `./assets/img/spring/${i + 1}.jpg`);
+        }else if (event.target.dataset.season === 'summer'){
+            portfolioImgs.forEach((img, i) => img.src = `./assets/img/summer/${i + 1}.jpg`);
+        }else if (event.target.dataset.season === 'autumn'){
+            portfolioImgs.forEach((img, i) => img.src = `./assets/img/autumn/${i + 1}.jpg`);
+        };       
+    };
+};
+
+portfolioBtns.addEventListener('click', changeImg);
+
+const seasons = ['winter', 'spring', 'summer', 'autumn'];
+
+
