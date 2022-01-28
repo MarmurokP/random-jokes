@@ -112,7 +112,7 @@ margin-right: 20px;
     font-style: normal;
     font-weight: 700;
     font-size: var(--font3);
-    color: var(--color-gold);
+    color: var(--color-white);
     cursor: pointer;
 }
 
@@ -126,7 +126,7 @@ margin-right: 20px;
     color: var(--color-white);
 }
 
-.rus{
+.ru{
     padding: 0;
     line-height: 50px;
     font-family: Inter;
@@ -135,6 +135,10 @@ margin-right: 20px;
     font-size: var(--font3);
     color: var(--color-white);
     cursor: pointer;
+}
+
+.lang-active{
+    color: var(--color-gold);
 }
 
 .header-two{

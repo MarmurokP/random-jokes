@@ -1,3 +1,5 @@
+import {i18Obj} from './translate.js';
+
 // Burger
 const burgerItem = document.querySelector('.burger');
 const burgerClasses = burgerItem.classList;
@@ -23,7 +25,7 @@ navLink.forEach(link => {
 
 // Portfolio
 
-const emptyButton = document.querySelector('.empty-button');
+// const emptyButton = document.querySelector('.empty-button');
 const emptyButtons = document.querySelectorAll('.empty-button');
 const portfolioImgs = document.querySelectorAll('.portfolio-img');
 const portfolioBtns = document.querySelector('.portfolio-buttons');
@@ -31,13 +33,13 @@ const portfolioBtns = document.querySelector('.portfolio-buttons');
 
 function changeImg(event) {
     if(event.target.classList.contains('empty-button')){
-        if(event.target.dataset.season === 'winter'){
+        if(event.target.dataset.i18 === 'winter'){
             portfolioImgs.forEach((img, i) => img.src = `./assets/img/winter/${i + 1}.jpg`);
-        }else if(event.target.dataset.season === 'spring'){
+        }else if(event.target.dataset.i18 === 'spring'){
             portfolioImgs.forEach((img, i) => img.src = `./assets/img/spring/${i + 1}.jpg`);
-        }else if (event.target.dataset.season === 'summer'){
+        }else if (event.target.dataset.i18 === 'summer'){
             portfolioImgs.forEach((img, i) => img.src = `./assets/img/summer/${i + 1}.jpg`);
-        }else if (event.target.dataset.season === 'autumn'){
+        }else if (event.target.dataset.i18 === 'autumn'){
             portfolioImgs.forEach((img, i) => img.src = `./assets/img/autumn/${i + 1}.jpg`);
         };       
     };
@@ -70,3 +72,44 @@ function preloadImages() {
 };
 
 portfolioBtns.addEventListener('click', addActive);
+
+// Languages
+
+const eng = document.querySelector('.eng');
+const ru = document.querySelector('.ru');
+
+eng.addEventListener('click', () => {
+    eng.classList.add('lang-active');
+    ru.classList.remove('lang-active');
+    function getTranslate(){    
+        const dataI = document.querySelectorAll('[data-i18]');
+        dataI.forEach(el => {
+            let attr = el.getAttribute('data-i18')    
+            el.textContent = i18Obj.en[attr];
+            if (el.placeholder) {
+                el.placeholder = i18Obj.en[attr];
+                el.textContent = ''
+              };
+        });
+    };     
+        getTranslate();
+});
+ru.addEventListener('click', () => {
+    ru.classList.add('lang-active');
+    eng.classList.remove('lang-active');
+    function getTranslate(){    
+        const dataI = document.querySelectorAll('[data-i18]');
+        dataI.forEach(el => {
+            let attr = el.getAttribute('data-i18')    
+            el.textContent = i18Obj.ru[attr];
+            if (el.placeholder) {
+                el.placeholder = i18Obj.ru[attr];
+                el.textContent = ''
+              };
+        });
+    };
+    
+    getTranslate();
+});
+
+
