@@ -112,4 +112,20 @@ ru.addEventListener('click', () => {
     getTranslate();
 });
 
+// theme
+
+const theme = document.querySelector('.sun');
+const themeClasses = theme.classList;
+const style = document.querySelector('.style');
+
+
+
+theme.addEventListener('click', () => {
+themeClasses.toggle('moon');
+if(style.getAttribute('href') == "./style.css"){
+    style.href = "./light-style.css";
+} else {
+    style.href = "./style.css";
+};
+});
 

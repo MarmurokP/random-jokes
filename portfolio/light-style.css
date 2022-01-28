@@ -17,7 +17,7 @@
 
 html{
     scroll-behavior: smooth;
-    background-color: var(--color-black);
+    background-color: var(--color-white);
 }
 
 body{
@@ -46,7 +46,7 @@ h4{
 
 
 .header-container{
-    background: url(./assets/img/bg.jpg);
+    background: url(./assets/img/bg-light.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
     display: flex; 
@@ -59,7 +59,7 @@ h4{
     margin-left: 20px;
     width: 50px;
     height: 50px; 
-    background-image: url(./assets/svg/logo.svg); 
+    background-image: url(./assets/svg/logo-lig.svg); 
     background-size: contain;
     background-repeat: no-repeat;
     transition: .3s; 
@@ -67,7 +67,7 @@ h4{
 }
 
 .header-logo:hover{
-    filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%);    
+    filter: invert(91%) sepia(3%) saturate(3546%) hue-rotate(2deg) brightness(75%) contrast(100%);    
 }
 
 .header-nav{
@@ -90,12 +90,12 @@ h4{
     font-style: normal;
     font-weight: 400;
     font-size: var(--font3);
-    color: var(--color-white);
+    color: var(--color-black);
     transition: .3s;
 }
 
 .nav-link:hover{
-    color: var(--color-gold);
+    color: var(--color-white);
 }
 
 .languages{
@@ -112,7 +112,7 @@ margin-right: 20px;
     font-style: normal;
     font-weight: 700;
     font-size: var(--font3);
-    color: var(--color-white);
+    color: var(--color-black);
     cursor: pointer;
 }
 
@@ -123,7 +123,7 @@ margin-right: 20px;
     font-style: normal;
     font-weight: 700;
     font-size: var(--font3);
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .ru{
@@ -133,12 +133,12 @@ margin-right: 20px;
     font-style: normal;
     font-weight: 700;
     font-size: var(--font3);
-    color: var(--color-white);
+    color: var(--color-black);
     cursor: pointer;
 }
 
 .lang-active{
-    color: var(--color-gold);
+    color: var(--color-white);
 }
 
 .sun{
@@ -189,7 +189,7 @@ font-style: normal;
 font-weight: bold;
 font-size: var(--font2);
 line-height: 80px;
-color: var(--color-gold);
+color: var(--color-black);
 }
 
 h2::before{
@@ -199,7 +199,7 @@ h2::before{
   height: 2px;
   top: 50%;
  margin-left: calc(-50% - 20px);
-  background-color: var(--color-gold);    
+  background-color: var(--color-black);    
 }
 
 h2::after{
@@ -209,14 +209,14 @@ h2::after{
   height: 2px;
   top: 50%;
   margin-left: 21px;
-  background-color: var(--color-gold);    
+  background-color: var(--color-black);    
 }
 
 .fill-button{
     border: 0;
     width: 220px;
     height: 55px;
-    background-color: var(--color-gold);
+    background-color: var(--color-white);
     font-family: Inter;
     font-weight: 400;
     font-size: 20px;
@@ -225,7 +225,12 @@ h2::after{
     transition: .3s;
 }
 
+.price-button{
+    background-color: var(--color-gold);
+}
+
 .fill-button:hover{
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 
@@ -233,7 +238,7 @@ h2::after{
 
 .hero-container{
 display: flex;
-background-image: url(./assets/img/bg.jpg);
+background-image: url(./assets/img/bg-light.jpg);
 background-repeat: no-repeat;
 background-position: center -90px;
 min-height: 820px;
@@ -256,7 +261,7 @@ font-style: 700;
 font-weight: bold;
 font-size: var(--font1);
 line-height: 120px;
-color: var(--color-white);
+color: var(--color-black);
 }
 
 .about-hero{    
@@ -266,7 +271,7 @@ color: var(--color-white);
     font-style: normal;
     font-weight: 400;
     font-size: var(--font3);
-    color: var(--color-white);
+    color: var(--color-black);
     line-height: 40px;
     max-width: 470px;
 }
@@ -319,7 +324,7 @@ h4{
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    color: var(--color-white);
+    color: var(--color-black);
     line-height: 40px;
     padding-top: 100px;
 }
@@ -329,7 +334,7 @@ h4{
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    color: var(--color-white);
+    color: var(--color-black);
     line-height: 36px;   
     max-width: 280px; 
     padding-left: 20px;
@@ -353,11 +358,11 @@ h4{
     border: 2px solid var(--color-gold);    
     width: 220px;
     height: 55px;
-    background-color: transparent;
+    background-color: var(--color-gold);
     font-family: Inter;
     font-weight: 400;
     font-size: 20px;
-    color: var(--color-gold);
+    color: var(--color-black);
     cursor: pointer;
     transition: .3s;    
 }
@@ -366,9 +371,9 @@ h4{
     color: var(--color-white);
 }
 
-.empty-button-active{
-    background-color: var(--color-gold);
-    color: var(--color-black);
+.empty-button-active{    
+    background-color: var(--color-black);
+    color: var(--color-gold);
 }
 
 .gallery{
@@ -441,7 +446,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 28px;
 line-height: 56px;
-color: var(--color-white);
+color: var(--color-black);
 }
 
 .cost {
@@ -451,7 +456,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 48px;
-color: var(--color-gold);
+color: var(--color-black);
 
 }
 
@@ -459,7 +464,7 @@ color: var(--color-gold);
     padding-top: 20px;
     margin-bottom: 40px;
     text-align: center;
-    color: var(--color-white);
+    color: var(--color-black);
     font-family: Inter;
 font-style: normal;
 font-weight: 400;
@@ -476,7 +481,7 @@ line-height: 36px;
 .container .contacts{
     display: flex;
     height: 700px;
-    background-image: url(./assets/img/contacts.jpg);
+    background-image: url(./assets/img/contacts-light.jpg);
     background-size: auto 700px;
     background-position: center center;
     justify-content: flex-end;
@@ -509,7 +514,7 @@ line-height: 36px;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
-    color: var(--color-gold);    
+    color: var(--color-black);    
   }
 
   :focus::placeholder{
@@ -525,6 +530,7 @@ line-height: 36px;
     line-height: 40px;
     color: #ffffff;
     background-color: transparent;
+    background: rgba(255, 255, 255, 0.5);
     width: 425px;
     height: 43px;
     border: 3px solid var(--color-gold);
@@ -541,8 +547,9 @@ line-height: 36px;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
-    color: var(--color-white);
-    background-color: transparent;   
+    color: var(--color-black);
+    background-color: transparent;
+    background: rgba(255, 255, 255, 0.5);
     border: 3px solid var(--color-gold);
     margin-bottom: 20px;
     outline: none;
@@ -569,7 +576,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 50px;
-color: var(--color-white);
+color: var(--color-black);
 }
 
 .copyright{
@@ -587,7 +594,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 50px;
-color: var(--color-white);
+color: var(--color-black);
 transition: .3s;
 }
 
@@ -603,7 +610,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 50px;
-color: var(--color-white);
+color: var(--color-black);
 transition: .3s;
 }
 
@@ -638,36 +645,36 @@ background-repeat: no-repeat;
 }
 
 .footer-nav-item:nth-child(1){
-    background-image: url(./assets/svg/insta.svg);
+    background-image: url(./assets/svg/insta-lig.svg);
     background-size: 32px 32px;  
     transition: .3s;
 }
 .footer-nav-item:nth-child(2){
-    background-image: url(./assets/svg/fb.svg);
+    background-image: url(./assets/svg/fb-lig.svg);
     background-size: 32px 32px;
-    transition: .3s; 
-}
+    transition: .3s;
+    }
 .footer-nav-item:nth-child(3){
-    background-image: url(./assets/svg/tw.svg);
+    background-image: url(./assets/svg/tw-lig.svg);
     background-size: 32px 32px;
-    transition: .3s; 
-}
+    transition: .3s;
+    }
 .footer-nav-item:nth-child(4){
-    background-image: url(./assets/svg/pinterest.svg);
+    background-image: url(./assets/svg/pinterest-lig.svg);
     background-size: 32px 32px;
-    transition: .3s; 
-}
+    transition: .3s;
+    }
 .footer-nav-item:nth-child(1):hover{    
-        filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%);       
+    filter: invert(91%) sepia(3%) saturate(3546%) hue-rotate(2deg) brightness(75%) contrast(100%);       
 }
 .footer-nav-item:nth-child(2):hover{
-    filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%);
+    filter: invert(91%) sepia(3%) saturate(3546%) hue-rotate(2deg) brightness(75%) contrast(100%);
 }
 .footer-nav-item:nth-child(3):hover{
-    filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%); 
+    filter: invert(91%) sepia(3%) saturate(3546%) hue-rotate(2deg) brightness(75%) contrast(100%); 
 }
 .footer-nav-item:nth-child(4):hover{
-    filter: invert(15%) sepia(22%) saturate(470%) hue-rotate(5deg) brightness(80%) contrast(87%);
+    filter: invert(91%) sepia(3%) saturate(3546%) hue-rotate(2deg) brightness(75%) contrast(100%);
 }
 
 /*Burger*/
@@ -702,12 +709,17 @@ background-repeat: no-repeat;
         margin-left: 40px;
     }
     .header-nav{                        
-        background-color: var(--color-black);     
+        background-color: var(--color-white);     
         max-width: 620px;
         height: 1024px;
         z-index: 25;
         transition: .3s all linear;
     }
+
+    .nav-link:hover{
+        color: var(--color-gold);
+    }
+
     .open{ 
         position: absolute;
         display: block;       
@@ -739,6 +751,12 @@ background-repeat: no-repeat;
        align-items: flex-start;
        top: 20px;
     }
+
+    .sun{
+        position: absolute;        
+    }
+
+
     .burger { 
         top: 20px;       
         display: block;
@@ -750,7 +768,7 @@ background-repeat: no-repeat;
         display: block;
         width: 50px;
         height: 3px;
-        background-color: var(--color-white);
+        background-color: var(--color-black);
         margin: 10px auto;        
         transition: .3s;
     }
