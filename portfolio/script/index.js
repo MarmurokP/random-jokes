@@ -129,3 +129,26 @@ if(style.getAttribute('href') == "./style.css"){
 };
 });
 
+// Buttons
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(el => {
+    let thHandler;
+    el.addEventListener("click", function() {
+        let $this = el;
+        if ($this.classList.contains("clicked")) {
+          $this.classList.remove("clicked");
+          if (thHandler) clearTimeout(thHandler);
+          thHandler = setTimeout(function() {
+            $this.click();
+          }, 100);
+        } else {
+          $this.classList.add("clicked");
+          if(thHandler) clearTimeout(thHandler);
+          thHandler = setTimeout(function() {
+            $this.classList.remove("clicked");
+          }, 1100 );
+        }
+    })      
+})

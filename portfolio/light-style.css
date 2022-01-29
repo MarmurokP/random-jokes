@@ -234,6 +234,28 @@ h2::after{
     color: var(--color-white);
 }
 
+.fill-button:focus{
+    outline: 0;
+}
+
+.clicked{
+background: var(--color-white);
+animation: button-click 1s linear;
+}
+
+@keyframes button-click {
+    0% { 
+      box-shadow:0 0 0 var(--color-gold);
+    }
+    33% {
+      box-shadow: 0 0 0 1em rgba(255,255,255,.2)
+    }
+    
+    66% {
+      box-shadow: 0 0 0 2em rgba(255,255,255,0);
+    }
+}
+
 /*hero landing*/
 
 .hero-container{
