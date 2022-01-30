@@ -20,16 +20,13 @@ navLink.forEach(link => {
         burgerClasses.add('burger');
         menuClasses.add('close');
     });
-})
-
+});
 
 // Portfolio
 
-// const emptyButton = document.querySelector('.empty-button');
 const emptyButtons = document.querySelectorAll('.empty-button');
 const portfolioImgs = document.querySelectorAll('.portfolio-img');
 const portfolioBtns = document.querySelector('.portfolio-buttons');
-
 
 function changeImg(event) {
     if(event.target.classList.contains('empty-button')){
@@ -89,10 +86,10 @@ eng.addEventListener('click', () => {
             if (el.placeholder) {
                 el.placeholder = i18Obj.en[attr];
                 el.textContent = ''
-              };
+            };
         });
     };     
-        getTranslate();
+    getTranslate();
 });
 ru.addEventListener('click', () => {
     ru.classList.add('lang-active');
@@ -105,10 +102,9 @@ ru.addEventListener('click', () => {
             if (el.placeholder) {
                 el.placeholder = i18Obj.ru[attr];
                 el.textContent = ''
-              };
+            };
         });
-    };
-    
+    };    
     getTranslate();
 });
 
@@ -118,8 +114,6 @@ const theme = document.querySelector('.sun');
 const themeClasses = theme.classList;
 const style = document.querySelector('.style');
 
-
-
 theme.addEventListener('click', () => {
 themeClasses.toggle('moon');
 if(style.getAttribute('href') == "./style.css"){
@@ -128,6 +122,8 @@ if(style.getAttribute('href') == "./style.css"){
     style.href = "./style.css";
 };
 });
+
+// themeChanger();
 
 // Buttons
 
@@ -149,6 +145,28 @@ buttons.forEach(el => {
           thHandler = setTimeout(function() {
             $this.classList.remove("clicked");
           }, 1100 );
-        }
-    })      
-})
+        };
+    });      
+});
+
+
+function setLocalStorage() {
+    let themeChanger = style.getAttribute('href');    
+    localStorage.setItem('themeChanger', themeChanger);
+    localStorage.setItem('themeClasses', themeClasses);
+
+  }
+  window.addEventListener("beforeunload", setLocalStorage)
+
+  function getLocalStorage() {
+    if(localStorage.getItem('themeChanger')) {
+      const themeChanger = localStorage.getItem('themeChanger');
+      style.href = themeChanger;
+      if(localStorage.getItem('themeClasses') === 'sun moon'){
+          themeClasses.add('moon');
+      } ;
+    };
+    
+  };
+  window.addEventListener('load', getLocalStorage)
+ 
