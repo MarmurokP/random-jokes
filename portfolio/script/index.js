@@ -115,12 +115,12 @@ const themeClasses = theme.classList;
 const style = document.querySelector('.style');
 
 theme.addEventListener('click', () => {
-themeClasses.toggle('moon');
-if(style.getAttribute('href') == "./style.css"){
+if(style.getAttribute('href') === ""){
     style.href = "./light-style.css";
 } else {
-    style.href = "./style.css";
+    style.href = "";
 };
+themeClasses.toggle('moon');
 });
 
 // themeChanger();
