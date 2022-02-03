@@ -168,6 +168,69 @@ function setLocalStorage() {
     };
     
   };
-  window.addEventListener('load', getLocalStorage)
+  window.addEventListener('load', getLocalStorage);
+
+//   Video
+
+  const player = document.querySelector('.video');
+  const video = player.querySelector('.vid-player');
+  const bigPlayButton = player.querySelector('.play-button');
+  const smallPlayButton = player.querySelector('.video-small-play');
+  const playButton = smallPlayButton.classList;
+  const progressBar = player.querySelector('.video-progress-bar');
+  const soundIcon = player.querySelector('.video-sound-ico');
+  const soundIcons = soundIcon.classList;
+  const soundBar = player.querySelector('.sound-bar');
+
+  function togglePlay() {
+      if(video.paused){
+          video.play();
+      } else {
+          video.pause();
+      };
+  };
+
+  function updateButtons(){
+    bigPlayButton.classList.toggle('play-button-none');
+    playButton.toggle('pause');
+  }
  
-  console.log("Отметка за задание 75 баллов/n1 Смена изображений в секции portfolio +25/n2 Перевод страницы на два языка +25/n3 Переключение светлой и тёмной темы +25 На страницу добавлен переключатель/n4 сложные эффекты для кнопок при наведении и/или клике/n5 Сохранение в local storage выполнено только для светлой\темной темы")
+  function handleSoundUpdate(){
+    video['volume'] = this.value;
+      if(video['volume'] === 0){
+          soundIcons.add('mute');
+      } else  if(this.value !== 0){        
+          soundIcons.remove('mute');
+      };    
+ };
+
+  function mute (){
+    if(video['volume'] !== 0){
+       video['volume'] = 0;
+       soundIcons.add('mute');
+    }else if(soundBar.value > 0){
+       video['volume'] = soundBar.value;
+       soundIcons.remove('mute');              
+    };        
+};
+
+function updateVolume() {
+    // if (video.muted) {
+    //   video.muted = false;
+    // };
+    // video['volume'] = soundBar.value;
+    soundBar.style.background = `linear-gradient(to right, #bdae82 0%, #bdae82 ${soundBar.value * 100}%, #ffffff ${soundBar.value * 100}%, #ffffff 100%)`;   
+  
+  };
+
+video.addEventListener('click', togglePlay);
+video.addEventListener('play', updateButtons);
+video.addEventListener('pause', updateButtons);
+bigPlayButton.addEventListener('click', togglePlay);
+smallPlayButton.addEventListener('click', togglePlay);
+
+soundBar.addEventListener('change', handleSoundUpdate);
+// soundBar.addEventListener('mousemove', handleSoundUpdate);
+soundIcon.addEventListener('click', mute);
+soundBar.addEventListener('input', updateVolume);
+

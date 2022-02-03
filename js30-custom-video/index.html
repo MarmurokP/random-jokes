@@ -118,12 +118,25 @@
             <div class="header-two">
                 <h2 class="section-title" data-i18="video">Video</h2>
             </div>
-            <div class="video-player">
-                <div class="play-button"></div>
-                <video class="vid-player" poster="./assets/img/video-player.jpg" controls>
-                    <source src="./video/video-wed-1.mp4" type="video/mp4">
-                </video>
+            <div class="video">
+                <div class="video-player">
+                    <div class="play-button"></div>
+                    <video class="vid-player" poster="./assets/img/video-player.jpg">
+                        <source src="./video/video-wed-1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-bar">
+                    <div class="video-small-play play"></div>
+                    <div class="video-view-slide">
+                        <input type="range" value="0" min="0" max="100" step="1" class="video-progress-bar">
+                    </div>
+                    <div class="video-sound-ico unmute"></div>
+                    <div class="video-sound-bar">
+                        <input type="range" value="0.4" min="0" max="1" step="0.01" class="sound-bar">
+                    </div>
+                </div>
             </div>
+
         </section>
         <section class="container" id="price">
 
