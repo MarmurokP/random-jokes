@@ -214,23 +214,38 @@ function setLocalStorage() {
     };        
 };
 
-function updateVolume() {
-    // if (video.muted) {
-    //   video.muted = false;
-    // };
-    // video['volume'] = soundBar.value;
-    soundBar.style.background = `linear-gradient(to right, #bdae82 0%, #bdae82 ${soundBar.value * 100}%, #ffffff ${soundBar.value * 100}%, #ffffff 100%)`;   
-  
+soundBar.style.background = `linear-gradient(to right, #bdae82 0%, #bdae82 ${soundBar.value * 100}%, #ffffff ${soundBar.value * 100}%, #ffffff 100%)`;   
+
+function updateVolume() {    
+    soundBar.style.background = `linear-gradient(to right, #bdae82 0%, #bdae82 ${soundBar.value * 100}%, #ffffff ${soundBar.value * 100}%, #ffffff 100%)`;  
   };
+
+  function handleProgress(){
+      const percent = (video.currentTime / video.duration) * 100;      
+      progressBar.style.background = `linear-gradient(to right, #bdae82 0%, #bdae82 ${percent}%, #ffffff ${percent}%, #ffffff 100%)`; 
+      progressBar.value = percent;
+  }
+
+  function scrub(event){
+     const scrubTime = (event.offsetX / progressBar.offsetWidth) * video.duration;
+     video.currentTime = scrubTime;
+  }
 
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButtons);
 video.addEventListener('pause', updateButtons);
+video.addEventListener('timeupdate',handleProgress);
 bigPlayButton.addEventListener('click', togglePlay);
 smallPlayButton.addEventListener('click', togglePlay);
 
 soundBar.addEventListener('change', handleSoundUpdate);
-// soundBar.addEventListener('mousemove', handleSoundUpdate);
 soundIcon.addEventListener('click', mute);
 soundBar.addEventListener('input', updateVolume);
+
+let mousedown = false;
+progressBar.addEventListener('click', scrub);
+progressBar.addEventListener('mousemove', (event) => mousedown && scrub(event));
+progressBar.addEventListener('mousedown', () => mousedown = true);
+progressBar.addEventListener('mouseup', () => mousedown = false);
+
 
