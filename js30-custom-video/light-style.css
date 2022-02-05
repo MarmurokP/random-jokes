@@ -1,0 +1,255 @@
+:root {
+    --color-gold: #bdae82;
+    --color-black: #000;
+    --color-white: #ffffff;
+    --font1: 60px;
+    --font2: 40px;
+    --font3: 20px;
+  }  
+
+html{    
+    background-color: var(--color-white);
+}
+
+.header-container{
+    display: flex; 
+    background: url(./assets/img/bg-light.jpg);       
+    background-repeat: no-repeat;
+    background-position: center 0;    
+    min-height: 90px;            
+}
+
+
+.nav-link{ 
+    
+    color: var(--color-black);
+}
+
+.nav-link:hover{
+    color: var(--color-white);
+}
+.eng{   
+    color: var(--color-black);   
+}
+
+.slash{    
+    color: var(--color-black);
+}
+
+.ru{    
+    color: var(--color-black);   
+}
+
+.lang-active{
+    color: var(--color-white);
+}
+
+h2{
+color: var(--color-black);
+}
+
+h2::before{   
+  background-color: var(--color-black);    
+}
+
+h2::after{    
+  background-color: var(--color-black);    
+}
+
+.fill-button{   
+    background-color: var(--color-white);    
+}
+
+.price-button{
+    background-color: var(--color-gold);
+}
+
+.fill-button:hover{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.clicked{
+background: var(--color-white);
+}
+
+@keyframes button-click {
+    0% { 
+      box-shadow:0 0 0 var(--color-gold);
+    }
+    33% {
+      box-shadow: 0 0 0 1em rgba(255,255,255,.2)
+    }
+    
+    66% {
+      box-shadow: 0 0 0 2em rgba(255,255,255,0);
+    }
+}
+
+/*hero landing*/
+
+.hero-container{
+background-image: url(./assets/img/bg-light.jpg);
+}
+
+h1{
+color: var(--color-black);
+}
+
+.about-hero{     
+    color: var(--color-black);   
+}
+
+/*skills*/
+
+h4{    
+    color: var(--color-black);    
+}
+
+.skill-about{       
+    color: var(--color-black);    
+}
+
+/*Portfolio*/
+
+.empty-button{
+    border: 2px solid var(--color-gold);     
+    background-color: var(--color-gold);
+    color: var(--color-black);   
+}
+
+.empty-button:hover{   
+    color: var(--color-white);
+}
+
+.empty-button-active{    
+    background-color: var(--color-black);
+    color: var(--color-gold);
+}
+
+/*Video*/
+
+/*Price*/
+
+.price-card{   
+    border:3px solid var(--color-gold);    
+}
+
+h3{   
+color: var(--color-black);
+}
+
+.cost {   
+color: var(--color-black);
+}
+
+.description{   
+color: var(--color-black);   
+}
+
+/*Contacts*/
+
+.container .contacts{    
+    background-image: url(./assets/img/contacts-light.jpg);    
+}
+
+::placeholder {  
+    color: var(--color-black);    
+  }
+
+  :focus::placeholder{
+      opacity: 0.5;      
+  } 
+
+.email{    
+    background: rgba(255, 255, 255, 0.5);    
+    border: 3px solid var(--color-gold);    
+}
+
+.message{    
+    color: var(--color-black);
+    background-color: transparent;
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid var(--color-gold);    
+}
+
+/*Footer*/
+
+.footer-links{ 
+color: var(--color-black);
+}
+
+.github-link{    
+color: var(--color-black);
+}
+
+.github-link:hover{
+    color: var(--color-gold);
+}
+
+.rs-link{   
+color: var(--color-black);
+}
+
+.rs-link:hover{
+    color: var(--color-gold);
+}
+
+
+.footer-nav-item:nth-child(1){
+    background-image: url(./assets/svg/insta-lig.svg);    
+}
+.footer-nav-item:nth-child(2){
+    background-image: url(./assets/svg/fb-lig.svg);    
+    }
+.footer-nav-item:nth-child(3){
+    background-image: url(./assets/svg/tw-lig.svg);    
+    }
+.footer-nav-item:nth-child(4){
+    background-image: url(./assets/svg/pinterest-lig.svg);    
+    }
+.footer-nav-item:nth-child(1):hover{    
+    filter: invert(91%) sepia(3%) saturate(3546%) hue-rotate(2deg) brightness(75%) contrast(100%);       
+}
+.footer-nav-item:nth-child(2):hover{
+    filter: invert(91%) sepia(3%) saturate(3546%) hue-rotate(2deg) brightness(75%) contrast(100%);
+}
+.footer-nav-item:nth-child(3):hover{
+    filter: invert(91%) sepia(3%) saturate(3546%) hue-rotate(2deg) brightness(75%) contrast(100%); 
+}
+.footer-nav-item:nth-child(4):hover{
+    filter: invert(91%) sepia(3%) saturate(3546%) hue-rotate(2deg) brightness(75%) contrast(100%);
+}
+
+/*Burger*/
+@media(max-width: 768px){
+    :root{
+        --font1: 32px;
+        --font2: 20px;
+        --font3: 18px;
+    }
+    .header-nav{                        
+        background-color: var(--color-white);         
+    }
+    .header-container{                 
+        background-size: auto 620px;
+        background-position: -5px -30px;               
+    }
+    .nav-link:hover{
+        color: var(--color-gold);
+    }
+    
+    .burger-line{       
+        background-color: var(--color-black);       
+    }
+   
+    .burger:hover .burger-line{       
+        background-color: var(--color-gold);              
+    } 
+    .hero-container{         
+        min-height: 500px;
+        background-position: -5px -120px;
+        background-size: auto 620px;       
+    }
+    
+}
