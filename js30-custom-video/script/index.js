@@ -231,10 +231,24 @@ function updateVolume() {
      video.currentTime = scrubTime;
   }
 
+  function keyboardListner(event) {
+    const { keyCode } = event;
+    switch(keyCode) {
+      case 32:
+        togglePlay();            
+        break;
+      case 77:
+        mute();
+        break;   
+    };
+  };  
+  
+
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButtons);
 video.addEventListener('pause', updateButtons);
 video.addEventListener('timeupdate',handleProgress);
+document.addEventListener('keyup', keyboardListner);
 bigPlayButton.addEventListener('click', togglePlay);
 smallPlayButton.addEventListener('click', togglePlay);
 
@@ -248,4 +262,9 @@ progressBar.addEventListener('mousemove', (event) => mousedown && scrub(event));
 progressBar.addEventListener('mousedown', () => mousedown = true);
 progressBar.addEventListener('mouseup', () => mousedown = false);
 
-
+window.onkeydown = function(event) {
+    if(event.keyCode == 32 && event.target == document.body) {
+        event.preventDefault();
+        return false;
+    }
+};
