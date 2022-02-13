@@ -96,20 +96,48 @@ p {
     flex-wrap: wrap;   
 }
 
-.jokes {    
-    display: flex;
-    flex-wrap: wrap;
+.jokes {  
+    width: 1440px;     
     align-items: center;
     justify-content: center;
     padding-top: 300px;
 }
 
-.change-joke{
-    margin: 25px 0;
+
+
+.change-joke{  
+    height: 40px;  
+    margin-bottom: 25px;
+    margin-left: 43%;
+    border: none;
+    border-radius: 2%;
+    font-size: 20px;
+    background-color: blueviolet;
+    transition: .3s;
+    opacity: 0.6;
 }
 
-.random-joke{
-    font-size: 30px;
+.change-joke:hover{
+    color: #ffffff;
+    opacity: 1;
+    
+}
+
+.random-joke{       
+    font-size: 30px;   
+}
+
+.text{
+    padding: 15px 20px;
+    display: flex;
+    max-width: 1280px;
+}
+
+
+.author{   
+    display: flex;
+    margin-left: 80%;
+    padding: 15px 0;
 }
 
 .footer-container {
