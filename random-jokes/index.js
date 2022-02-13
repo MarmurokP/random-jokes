@@ -3,6 +3,7 @@ const randomText = document.querySelector('.text');
 const quotAutor = document.querySelector('.author');
 const quotButton = document.querySelector('.change-joke');
 
+
 function showData(data) {
     let qoutNum = Math.floor(0 + Math.random() * (data.length + 1));
   
@@ -20,6 +21,8 @@ async function getData() {
   getData();
 
   quotButton.addEventListener('click', getData);
+
+
 
   
   

@@ -55,41 +55,40 @@ p {
     align-items: center;  
 }
 
+.joke-language{
+    margin-right: 15px;
+}
+
 .languages{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;    
     align-items: center;
     margin-right: 20px;
     }
-    
-    .eng{
-        padding-left: 17px;
+
+    .lang{
+        padding-left: 0px;
         line-height: 50px;
         font-family: Inter;
         font-style: normal;
         font-weight: 700;       
-        color: yellow;
+        color: #ffffff;
         cursor: pointer;
     }
     
+    .lang-active{
+        color: yellow;
+    }
+    
     .slash{
-        padding: 0 9px;
+        padding: 4px 8px 0px 8px;
         line-height: 50px;
         font-family: Inter;
         font-style: normal;
         font-weight: 700;        
         color:#ffffff
-    }
-    
-    .ru{
-        padding: 0;
-        line-height: 50px;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 700;        
-        color: #ffffff;
-        cursor: pointer;        
-    }  
+    }    
+   
     
 .joke-container{
     display: flex;
@@ -115,6 +114,7 @@ p {
     background-color: blueviolet;
     transition: .3s;
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .change-joke:hover{
