@@ -1,0 +1,130 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header{    
+    flex: 0 0 auto;
+ }
+ main{    
+    flex: 1 0 auto;
+ }
+ footer{   
+    flex: 0 0 auto;
+ }
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+ 
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.change-language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;  
+    align-items: center;  
+}
+
+.languages{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    }
+    
+    .eng{
+        padding-left: 17px;
+        line-height: 50px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;       
+        color: yellow;
+        cursor: pointer;
+    }
+    
+    .slash{
+        padding: 0 9px;
+        line-height: 50px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;        
+        color:#ffffff
+    }
+    
+    .ru{
+        padding: 0;
+        line-height: 50px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;        
+        color: #ffffff;
+        cursor: pointer;        
+    }  
+    
+.joke-container{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.jokes {    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 300px;
+}
+
+.change-joke{
+    margin: 25px 0;
+}
+
+.random-joke{
+    font-size: 30px;
+}
+
+.footer-container {
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+}
+
+.copuright {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.year-span {
+    padding-left: 10px;
+}
