@@ -95,16 +95,31 @@ p {
     flex-wrap: wrap;   
 }
 
+.img-container{
+    position: absolute;
+    margin-left: 22%;
+    padding-top: 20px;
+    display: flex;
+    width: 450px;
+    height: 400px;
+    background-image: url(./assets/lady.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;     
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(1) contrast(102%);
+}
+
 .jokes {  
+    margin-top: 350px;
     width: 1440px;     
     align-items: center;
-    justify-content: center;
-    padding-top: 300px;
+    justify-content: center;    
 }
 
 
 
 .change-joke{  
+    padding: 5px 10px;
     height: 40px;  
     margin-bottom: 25px;
     margin-left: 43%;
@@ -130,13 +145,14 @@ p {
 .text{
     padding: 15px 20px;
     display: flex;
-    max-width: 1280px;
+    max-width: 1180px;
 }
 
 
 .author{   
+    max-width: 100%;
     display: flex;
-    margin-left: 80%;
+    margin-left: 70%;
     padding: 15px 0;
 }
 
@@ -147,6 +163,14 @@ p {
     justify-content: space-between;
 }
 
+.github-link{
+    transition: .3s;
+}
+
+.github-link:hover{
+    color: yellow;
+}
+
 .copuright {
     display: inline;
     flex-wrap: wrap;
@@ -155,4 +179,20 @@ p {
 
 .year-span {
     padding-left: 10px;
+}
+
+.rs-link{
+    display: flex;
+    width: 70px;
+    height: 50px;
+    background-image: url(./assets/rs_school.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transform: .3s;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.rs-link:hover{
+    filter: invert(90%) sepia(29%) saturate(4434%) hue-rotate(10deg) brightness(111%) contrast(105%);
 }
