@@ -1,3 +1,6 @@
+:root{
+    --color: yellow;
+}
 
 body{
     display: flex;
@@ -11,6 +14,10 @@ html{
     scroll-behavior: smooth;
     background-color: #000000;
     color: #ffffff;
+    font-family: roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
 }
 
 header{    
@@ -64,40 +71,40 @@ p {
     justify-content: space-around;    
     align-items: center;
     margin-right: 20px;
-    }
+}
 
-    .lang{
-        padding-left: 0px;
-        line-height: 50px;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 700;       
-        color: #ffffff;
-        cursor: pointer;
-    }
+.lang{
+    padding-left: 0px;
+    line-height: 50px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;       
+    color: #ffffff;
+    cursor: pointer;
+}
     
-    .lang-active{
-        color: yellow;
-    }
+.lang-active{
+ color: var(--color);
+ }
     
-    .slash{
-        padding: 4px 8px 0px 8px;
-        line-height: 50px;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 700;        
-        color:#ffffff
-    }    
-   
+.slash{
+    padding: 4px 8px 0px 8px;
+    line-height: 50px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;        
+    color:#ffffff
+}     
     
 .joke-container{
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap; 
+    position: relative;  
 }
 
 .img-container{
     position: absolute;
-    margin-left: 22%;
+    margin:0px 36% 0 28%;
     padding-top: 20px;
     display: flex;
     width: 450px;
@@ -115,8 +122,6 @@ p {
     align-items: center;
     justify-content: center;    
 }
-
-
 
 .change-joke{  
     padding: 5px 10px;
@@ -139,13 +144,17 @@ p {
 }
 
 .random-joke{       
-    font-size: 30px;   
+    font-size: 25px; 
+    font-weight: 600;  
 }
 
 .text{
     padding: 15px 20px;
     display: flex;
     max-width: 1180px;
+    font-family: caveat;
+    font-weight: 600;
+    font-size: 45px;
 }
 
 
@@ -156,8 +165,7 @@ p {
     padding: 15px 0;
 }
 
-.footer-container {
-    padding-bottom: 20px;
+.footer-container {    
     display: flex;
     flex-wrap: wrap;   
     justify-content: space-between;
@@ -168,7 +176,7 @@ p {
 }
 
 .github-link:hover{
-    color: yellow;
+    color: var(--color);
 }
 
 .copuright {
