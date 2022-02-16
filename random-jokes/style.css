@@ -1,0 +1,206 @@
+:root{
+    --color: yellow;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+header{    
+    flex: 0 0 auto;
+ }
+ main{    
+    flex: 1 0 auto;
+ }
+ footer{   
+    flex: 0 0 auto;
+ }
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+ 
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.change-language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;  
+    align-items: center;  
+}
+
+.joke-language{
+    margin-right: 15px;
+}
+
+.languages{
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    margin-right: 20px;
+}
+
+.lang{
+    padding-left: 0px;
+    line-height: 50px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;       
+    color: #ffffff;
+    cursor: pointer;
+}
+    
+.lang-active{
+ color: var(--color);
+ }
+    
+.slash{
+    padding: 4px 8px 0px 8px;
+    line-height: 50px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;        
+    color:#ffffff
+}     
+    
+.joke-container{
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative;  
+}
+
+.img-container{
+    position: absolute;
+    margin:0px 36% 0 28%;
+    padding-top: 20px;
+    display: flex;
+    width: 450px;
+    height: 400px;
+    background-image: url(./assets/lady.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;     
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(1) contrast(102%);
+}
+
+.jokes {  
+    margin-top: 350px;
+    width: 1440px;     
+    align-items: center;
+    justify-content: center;    
+}
+
+.change-joke{  
+    padding: 5px 10px;
+    height: 40px;  
+    margin-bottom: 25px;
+    margin-left: 43%;
+    border: none;
+    border-radius: 2%;
+    font-size: 20px;
+    background-color: blueviolet;
+    transition: .3s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.change-joke:hover{
+    color: #ffffff;
+    opacity: 1;
+    
+}
+
+.random-joke{       
+    font-size: 25px; 
+    font-weight: 600;  
+}
+
+.text{
+    padding: 15px 20px;
+    display: flex;
+    max-width: 1180px;
+    font-family: caveat;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+
+.author{   
+    max-width: 100%;
+    display: flex;
+    margin-left: 70%;
+    padding: 15px 0;
+}
+
+.footer-container {    
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+}
+
+.github-link{
+    transition: .3s;
+}
+
+.github-link:hover{
+    color: var(--color);
+}
+
+.copuright {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.year-span {
+    padding-left: 10px;
+}
+
+.rs-link{
+    display: flex;
+    width: 70px;
+    height: 50px;
+    background-image: url(./assets/rs_school.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transform: .3s;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.rs-link:hover{
+    filter: invert(90%) sepia(29%) saturate(4434%) hue-rotate(10deg) brightness(111%) contrast(105%);
+}
