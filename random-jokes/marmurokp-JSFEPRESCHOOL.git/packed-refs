@@ -1,0 +1,23 @@
+# pack-refs with: peeled fully-peeled sorted 
+5c3226efa5a9532d2b5ce756ad72a40e362556fb refs/heads/gh-pages
+77d3c4cbe38f05ba22a2840d24af1d71a3797a13 refs/heads/js30-custom-video
+6be117df0c57deaea6f551dea73bfa2f8616bfde refs/heads/js30-random-jokes
+707b7fdfd3cb6a9d36639ffc8b25d68305c9138e refs/heads/main
+fd155c26541842cf5213f2533d3fd73dac660f71 refs/heads/portfolio
+b8a4ec98d68e50118f1021290f40d54b9bc4bf9a refs/heads/portfolio-part2
+aeafc2f8bed22ebae3f3ed023f918acfef07d731 refs/heads/portfolio-part3
+1cd62f832f3c6e10dc1204e7ce7cdb7a1a051feb refs/pull/1/head
+dbf54d56efde84165c487d30f8dd39c88dbe2b3a refs/pull/10/head
+6be117df0c57deaea6f551dea73bfa2f8616bfde refs/pull/11/head
+c95dff28f6f3c0411483c2f73a40e0445ce777ac refs/pull/11/merge
+6be117df0c57deaea6f551dea73bfa2f8616bfde refs/pull/12/head
+fd155c26541842cf5213f2533d3fd73dac660f71 refs/pull/2/head
+88462093f2ff6ca9ae83a6bc968b95dfe55789f6 refs/pull/2/merge
+b8a4ec98d68e50118f1021290f40d54b9bc4bf9a refs/pull/3/head
+bc583104d6e5d0c1634ffb4620ea7f4a1bf1bb35 refs/pull/4/head
+aeafc2f8bed22ebae3f3ed023f918acfef07d731 refs/pull/5/head
+fd155c26541842cf5213f2533d3fd73dac660f71 refs/pull/6/head
+77d3c4cbe38f05ba22a2840d24af1d71a3797a13 refs/pull/7/head
+77d3c4cbe38f05ba22a2840d24af1d71a3797a13 refs/pull/8/head
+55bb9bb25336826596f17e8902fe8ce1861dff83 refs/pull/8/merge
+0135d64a31626ad78b9bb2b03051cf8618fd49de refs/pull/9/head
